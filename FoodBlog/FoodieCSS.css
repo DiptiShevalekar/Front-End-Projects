@@ -1,0 +1,670 @@
+:root {
+    --color-primary: pink;
+    --padding-large: 50px;
+    --padding-medium: 30px;
+    --padding-small: 10px;
+  
+    --margin-large: 50px;
+    --margin-medium: 30px;
+    --margin-small: 10px;
+  }
+
+  
+  @font-face {
+    font-family: "Lato-Bold";
+    src: url("./fonts/Lato/Lato-Bold.ttf");
+  }
+  
+  @font-face {
+    font-family: "Lato-Regular";
+    src: url("./fonts/Lato/Lato-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: "Lato-Regularitalic";
+    src: url("./fonts/Lato/Lato-RegularItalic.ttf");
+  }
+  
+  @font-face {
+    font-family: "Lora-Bold";
+    src: url("./fonts/Lora/Lora-Bold.ttf");
+  }
+  
+  .hero-banner {
+    background-color: rgb(221, 88, 152);
+    padding: var(--padding-large) 0;
+  }
+  
+  .main-menu :hover {
+    border-bottom: 2px solid pink;
+    cursor: url("./Navigation/clicker.png"), auto;
+  }
+  
+  .main-menu a {
+   /* font-family: "Lato-Bold";
+*/    
+    font-size: 16pt;
+    color: rgb(79, 37, 3);
+    margin: 10px;
+    text-decoration: none;
+  }
+   
+  .content-text h1 {
+    font-family: "Lora-Bold";
+    font-size: 68pt;
+    color: black;
+  }
+  
+  .content-text p {
+    font-family: "Lato-Regular";
+    font-size: 16pt;
+    color: ye;
+  }
+  
+  .content {
+    background-image: url("./HeroBaner/bg-shape.png");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+  
+  .go-to-recipe-btn {
+    background-color: #f3a742;
+    font-family: "Lato-Bold";
+    font-size: 16pt;
+    color: white;
+    border-radius: 27.5px;
+    border: black;
+    outline: none;
+    padding: 7px 25px;
+    margin-top: 1px;
+  }
+  
+  .go-to-recipe-btn:hover {
+    background-color: #f17a00;
+    cursor: pointer;
+  }
+  
+  .logo {
+    margin-top: 10px;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .section-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+  }
+  
+  .section-title h2 {
+    font-family: "Lora-Bold";
+    font-size: 34pt;
+    color: #002336;
+  }
+  
+  .section-title p {
+    font-family: "Lora-Bold";
+    font-size: 18pt;
+    color: #c3c6d5;
+  }
+  
+  .tabs {
+    background-color: #fafcff;
+    padding: 10px 0;
+  }
+  
+  .tabs h3 {
+    font-family: "Lora-Bold";
+    font-size: 46pt;
+    color: #3f9b7a;
+  }
+  
+  #Beverages p {
+    font-family: "Lato-Regular";
+    font-size: 18pt;
+    color: #002336;
+  }
+  
+  #Beverages{
+    display: flex;
+    margin-bottom: 100px;
+  }
+  
+  #Brunch p {
+    font-family: "Lato-Regular";
+    font-size: 18pt;
+    color: #002336;
+  }
+  
+  #Meals p {
+    font-family: "Lato-Regular";
+    font-size: 18pt;
+    color: #002336;
+  
+  }
+  
+  .tab {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+  }
+  
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 28px;
+    border-bottom: 5px solid #ddd;
+    color: #9297b0;
+    font-family: "Lora-Bold";
+  }
+
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    justify-content: space-around;
+  }
+  
+  .Beverages-img {
+    margin-top: 55px;
+  }
+  
+  .slider {
+    display: flex;
+    padding-top: 5%;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: var(--padding-large) 0;
+  }
+  
+   .slider-wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .left-arrow {
+    margin-right: 20px;
+  }
+  
+  .right-arrow {
+    margin-left: 20px;
+  }
+  
+  .show-recipes a {
+    color: grey;
+   
+    text-decoration: none;
+    font-family: "Lato-Regular";
+    padding-bottom: 0px;
+  }
+
+  .recipe{
+    color: darkmagenta;
+    font-style: italic;
+  }
+  
+  .tabclass {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .tabclass button {
+    background-color: #f3a742;
+    /* font-family: Lato; */
+    font-size: 16pt;
+    font-weight: bold;
+    color: white;
+    border-radius: 27.5px;
+    border: #f17a00;
+    width: 30%;
+    outline: none;
+    padding: 7px 25px;
+    margin-top: 1px;
+  }
+    
+  .latest-recipe-txt {
+    display: table;
+    color:#3f9b7a;
+    font-family: "Lora-Bold";
+    font-size: 34pt;
+  }
+  .latest-recipe-txt h4{
+    color: black;
+  }
+  
+  .latest-recipes {
+    display: flex;
+    flex-direction: column;
+    background-color: #fafcff;
+  }
+  
+  .text-wraper-latest-recipes {
+    display: flex;
+    
+    justify-content: flex-start;
+    align-items: flex-end;
+    justify-content: space-around;
+    text-align: end; 
+    margin-top: 20px;
+
+  }
+  
+  .card-list {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card1 {
+    margin: 15px;
+    background-color: #a1c9ff;
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(222, 198, 13, 0.93);
+    -moz-box-shadow: 1px 1px 2px 1px #97c2b6(138, 138, 138, 0.93);
+    box-shadow: 1px 1px 2px 1px pink(138, 138, 138, 0.93);
+    border-radius: 10px;
+  }
+  
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 10px;
+  }
+  
+  .recipe-name {
+    margin-top: 1px;
+  }
+  
+  .recipe p {
+    font-family: "Lato-Bold";
+    font-size: 12pt;
+    color: #f17a00;
+  }
+  
+  .recipe-name p {
+    font-family: "Lora-Bold";
+    font-size: 18pt;
+    color: #002336;
+  }
+  
+  .recipe-name1 p {
+    font-family: "Lora-Bold";
+    font-size: 28pt;
+    color: #fff;
+  }
+  .minutes-time{
+    font-family: "Lato-Bold";
+    font-size: 12pt;
+    color: darkmagenta;
+  }
+  
+ 
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 50px;
+  }
+  
+  .card-footer1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    padding: 15px;
+  }
+  
+  .time {
+    display: flex;
+    align-items: center;
+  }
+  
+  .comment {
+    display: flex;
+    align-items: center;
+  }
+  
+  .minutes-time {
+    margin-left: 10px;
+  }
+  
+  .comend-number {
+    margin-right: 10px;
+  }
+  
+  .comend-number p {
+    font-family: "Lato-Bold";
+    font-size: 12pt;
+    color: #c1c6d5;
+  }
+  
+  .card {
+    margin: 15px;
+    background-image: url("./LatestRecipes/recipe4/img.png");
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .card:hover {
+    cursor: pointer;
+    background-image: linear-gradient(
+        rgba(247, 152, 28, 0.8),
+        rgba(247, 152, 28, 0.8)
+      ),
+      url("./LatestRecipes/recipe4/img.png");
+  }
+  
+  .card img {
+    border-radius: 10px;
+  }
+  
+  .card-text1 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 24px;
+    margin-left: 30px;
+    margin-bottom: 47px;
+    padding-right: 56px;
+  }
+  
+  .tag {
+    display: flex;
+    border-radius: 10px;
+    width: 15%;
+    height: 30px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tag p {
+    font-family: "Lato-Bold";
+    font-size: 10pt;
+    color: #fff;
+  }
+  
+  .recipes {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+  
+  .ingridients {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+  }
+  
+  .ingridients-text {
+    margin-top: 40px;
+  }
+  
+  .ingridients-text p {
+    font-family: "Lora-Bold";
+    font-size: 18pt;
+    color: #002336;
+  }
+  
+  .text1 h2 {
+    font-family: "Lora-Bold";
+    font-size: 38pt;
+    color: #002336;
+    white-space: nowrap;
+  }
+  
+  .text2 p {
+    font-family: "Lato-Regular";
+    font-size: 16pt;
+    color: #9297b0;
+    white-space: nowrap;
+  }
+  
+  .recipe-txt-wraper {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left: 60px;
+    margin-left: 60px;
+  }
+  
+  .dosa-title p {
+    font-family: "Lora-Bold";
+    font-size: 16pt;
+    color: #9297b0;
+  }
+  
+   
+  .dosa-text {
+    margin: 15px;
+  }
+  .dosa{
+    color: #9297b0;
+  }
+  
+  .dosa-text p {
+    font-family: "Lato-regular";
+    font-size: 12pt;
+    color: #9297b0;
+    margin: 15px;
+  }
+  
+
+  .recipe-btn {
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+  
+  .footer {
+    display: flex;
+    background-color: #274f46;
+    position: relative;
+    padding: 20px 0;
+  }
+  
+  .subscribe {
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    top: -15%;
+    border-radius: 10px;
+    background-color: #fafcff;
+    padding: 0 50px;
+  }
+  
+  .subscribe h1 {
+    font-family: "Lora-Bold";
+    font-size: 26pt;
+    color: #002336;
+  }
+  
+  .logo-contact-wraper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 50px;
+    padding: 60px;
+  }
+
+ 
+
+
+  .telephone {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  .emailLink{
+    color: white;
+  }
+  
+  .popular-recipes {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    padding: 50px;
+  }
+  
+  .popular-recipes-title {
+    margin-top: 40px;
+  }
+  
+  .popular-recipes-title p {
+    font-family: "Lora-Bold";
+    font-size: 22pt;
+    color: #fff;
+  }
+  
+  .popular-recipes p {
+    line-height: 39px !important;
+    margin-bottom: 1px !important;
+  }
+  
+  .useful-links {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    padding: 50px;
+  }
+  
+  .useful-links-title {
+    margin-top: 48px;
+  }
+  .useful-links-title p {
+    margin-bottom: 0;
+  }
+  
+  .useful-links a {
+    padding: 10px;
+    text-decoration: none;
+    font-family: "Lato-Regular";
+    font-size: 16pt;
+    color: white;
+  }
+  
+  .useful-links-txt {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .useful-links-title p {
+    font-family: "Lora-Bold";
+    font-size: 22pt;
+    color: white;
+  }
+  
+  .footer-copyright {
+    background-color: pink;
+    padding: 1px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+  }
+  
+  .logo-contact-wraper p {
+    font-family: "Lato-Regular";
+    font-size: 14pt;
+    color: white;
+  }
+  
+  .footer-copyright p {
+    margin: 20px;
+    font-family: "Lato-Regular";
+    font-size: 14pt;
+    color: grey;
+  }
+  
+  .popular-recipes-txt {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .popular-recipes-txt a {
+    font-family: "Lato-Regular";
+    font-size: 16pt;
+    color: white;
+  }
+  
+  .popular-recipes a {
+    padding: 10px;
+    text-decoration: none;
+    font-family: "Lato-Regular";
+    font-size: 16pt;
+    color: white;
+    text-align: center;
+  }
+  
+  .form-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  
+  .form-wrapper button {
+    margin: 0 10px;
+  }
+  .subscribe-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .subscribe-info input {
+    width: 90%;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  
+  .subscribe-info p {
+    font-family: "Lato-Regular";
+    font-size: 12pt;
+    color: pink;
+  }
+  
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+.table-header{
+  padding-left: 100px;
+  padding-top: 50px;
+  text-align: end;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}

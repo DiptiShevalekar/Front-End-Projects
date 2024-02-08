@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./images/WebsiteLogo.jpeg" type="image/x-icon">
+    <title>FOODIEBLOG</title>
+    <link rel="stylesheet" type="text/css" href="./FoodieCSS.css" />
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="hero-banner">
+        <div class="navigation">
+          <div class="logo">
+            <img style="height: 7rem; width:7rem;" src="./images/WebsiteLogo.jpeg" alt="logo" />
+          </div>
+              <header>
+              <div style="display: flex;" class="main-menu" id="main-menu1">
+                <a href="">FOODIEBLOG</a></br>
+                <a href="">INFO</a></br>
+                <a href="recipes.html">DISH RECIPES</a></br>
+              </div>
+            </header>
+        </div>
+        <div class="content">
+          <div class="content-text">
+            <h1>
+              It`s time for <br />
+              food
+            </h1>
+            <p>
+              Are you looking for something delicious, special,<br />
+              and healthy? We are here to serve you with sincerity. <br />
+              Your arrival is eagerly awaited! Welcome!
+            </p>
+            <button onclick="window.location ='recipes.html'" class="go-to-recipe-btn">Get recipes of the dishes</button>
+          </div>
+
+          <div class="illustration">
+            <img src="./images/Illustrations.png" alt="logo" />
+          </div>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <div class="section-title">
+          <h2>We proudly present the finest and most delectable cuisine.</h2>
+          <p>
+            Prepare, present, savor, and relish your culinary creations.
+          </p>
+        </div>
+
+        <div class="tab">
+          <button class="tablinks active" onclick="onTablClick(event, 'Beverages')">
+            1. Beverages
+          </button>
+          <button class="tablinks" onclick="onTablClick(event, 'Snacks')">
+            2. Snacks
+          </button>
+          <button class="tablinks" onclick="onTablClick(event, 'Meals')">
+            3. Meals
+          </button>
+        </div>
+        <div id="Beverages" class="tabcontent">
+              <div class="tabclass">
+                <details> 
+                  <summary>  <h3>
+                  Our best<br />
+                  Beverages preparation.
+                </h3></summary>
+                <p>
+                  Beverages play a multifaceted role in our lives,
+                  <br />encompassing hydration, nutrition, cultural significance, and enjoyment,
+                  <br /><br />contributing to our overall health and well-being.
+                </p>
+                <button onclick="window.location =''">Go to recipes</button>
+              </div>
+              <div class="Beverages-img">
+                <video width="640" height="360" controls>
+                  <source src="./images/FoodVdo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </details>
+        </div>
+               
+          <div id="Brunch" class="tabcontent">
+            <div class="tabclass">
+              <details>            
+                <summary>Brunch recipes</summary>
+                <p>
+                  You've meticulously planned your beverages, and your meal shopping for the weekend is all squared away.
+                  But what about that delightful in-between time? Fret not, for we've curated a delightful list of brunch
+                  ideas to ignite your culinary creativity.<br/><br/>
+
+                  With a plethora of brunch ideas at your disposal, from hearty omelets to wholesome cereals, delectable
+                  toasts, satisfying sandwiches, and even adventurous burritos, you'll find your culinary creativity flowing
+                  effortlessly.
+                </p>
+              </details>
+              <button onclick="window.location = '' ">Go to the recipes</button>
+            </div>
+            <div class="Brunch-img">
+              <img src="./images/Brunch.jpeg" alt="logo" />
+            </div>
+        </div>
+
+        <div id="Meals" class="tabcontent">
+          <div class="tabclass">
+            
+            <h3>Our best<br />Meals recipes</h3>
+            <p>
+              Explore a world of culinary delight with our extensive collection of meal recipes spanning
+              a wide array of categories. <br />
+              Whether you're a vegetarian, a lover of all things meaty, <br />
+              or a dedicated vegan, we have something scrumptious for everyone.
+              From mouthwatering veggie creations to indulgent non-veg feasts, <br />
+              and even delectable vegan side dishes that will elevate your meals to a whole new level,
+              we've got your taste buds covered.<br /><br />
+            </p>
+            <button onclick="window.location ='dinner.html'">Go to recipes</button>
+          </div>
+          <div class="breakfast-img">
+            <img src="./images/Meal.jpeg" alt="logo" />
+          </div>
+        </div>
+
+        <div class="latest-recipes">
+          <div class="text-wraper-latest-recipes">
+            <div class="latest-recipe-txt">
+              <h2>Newly added recipes</h2>
+            </div>
+          </div>
+
+          <div class="card-list">
+            <div class="card1">
+              <div class="card-pic">
+                <img src="./images/dal makhani2.jpeg" alt="logo" style="height:300px; width:470px;">
+              </div>
+              <div class="card-text">
+                <div class="recipe">
+                  <h1>The famous & loved Dal in India</h1>
+                  <h4>Dal Makhani, don't forget to put butter</h4>
+                </div>
+            </div>
+              <div class="card-footer">
+                <div class="time">
+                  <div class="cloack-logo">
+                    <img src="./images/icono3.png" alt="logo" />
+                  </div>
+                  <div class="minutes-time">
+                    <h2>30 min</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card1">
+              <div class="card-pic">
+                <img src="./images/poha.jpeg" alt="logo"  style="height:300px; width:450px;"/>
+              </div>
+              <div class="card-text">
+                <div class="recipe">
+                  <h1>Go to breakfast for most of us</h1>
+                  <h4>Poha, Onions are called toppings here</h4>
+                </div>
+                <div class="recipe-name">
+                  
+                </div>
+              </div>
+              <div class="card-footer1">
+                <div class="time">
+                  <div class="cloack-logo">
+                    <img src="./images/icono3.png" alt="logo" />
+                  </div>
+                  <div class="minutes-time">
+                    <h2>30 min</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card1">
+              <div class="card-pic">
+                <img src="./images/Bhakari2.jpg" alt="logo" style="height:300px; width:470px;"/>
+              </div>
+              <div class="card-text">
+                <div class="recipe">
+                  <h1>It makes you feel home</h1>
+                  <h4>Bhakari, Bhakari is the healthiest</h4>
+                </div>
+
+                <div class="recipe-name">
+                </div>
+              </div>
+              <div class="card-footer1">
+                <div class="time">
+                  <div class="cloack-logo">
+                    <img src="./images/icono3.png" alt="logo" />
+                  </div>
+                  <div class="minutes-time">
+                    <h2>30 min</h2>
+                  </div>
+                </div>
+               </div>
+            </div>
+          </div>
+        </div>
+        <div class="recipes">
+          <div class="recipe-txt-wraper">
+            <div class="latest-recipe-txt">
+              <h2>POPULAR THIS WEEK</h2>
+              <h4>Multigrain Dosa</h4>
+            </div>
+            <div class="text2">
+              <div class="recipe-pic">
+                <img src="./images/multigrain dosa.jpeg" alt="logo" style="width: 500px; height: 200px;" />
+              </div>
+              <p>Multi-Grain Dosa is a nutritious and delicious South Indian dish made from a combination of different grains and lentils.</br> 
+                It's a healthier alternative to traditional dosa, as it incorporates a variety of grains and is rich in fiber and nutrients.</br> 
+                Here's a basic recipe for making Multi-Grain Dosa.</p>
+                
+            </div>
+            <div class="ingridients-text">
+              <p>Ingredients</p>
+            </div>
+            <div class="dosa-text">
+              <p>1 cup rice (you can use any variety)</p>
+              <p>1/2 cup whole wheat grains</p>
+              <p>1/4 cup oats</p>
+              <p>1/4 cup quinoa</p>
+              <p>1/4 cup split black gram (urad dal)</p>
+              <p>1/4 cup split chickpeas (chana dal)</p>
+              <p>1/4 cup split green gram (moong dal)</p>
+              <p>1/4 cup fenugreek seeds (methi seeds)</p>
+              <p>1/2 cup sour yogurt</p>
+              <p>Salt to taste</p>
+              <p>Water as needed</p>
+            </div>
+
+            <diV class="ingridients">
+              <div class="dosa">
+                <div class="dosa-title">
+                  <p>Dosa preparation</p>
+                </div>
+                <p>Drain the soaked grains and lentils.
+                  In a blender or wet grinder, add the drained grains and lentils along with sour yogurt and a little water.
+                  </br>Grind them to a smooth batter. The consistency should be similar to regular dosa batter, not too
+                  thick nor too thin.
+                  </br>Transfer the batter to a large mixing bowl. Add salt and mix well. You can add a little water if the
+                  batter is too thick.</p>
+
+                <p>After fermentation, the batter will be bubbly and airy. Give it a gentle stir. </br>Heat a non-stick dosa
+                  tava (griddle) over medium-high heat.
+                  Grease it lightly with oil or ghee.
+                  </br>Pour a ladleful of batter onto the center of the tava and quickly spread it in a circular motion to
+                  make a thin dosa.
+                  </br> Drizzle a little oil or ghee around the edges of the dosa.
+                  </br> Cook the dosa until the edges start to lift and the bottom becomes golden and crispy.
+                  </br> Flip the dosa and cook the other side for a minute or so until it's lightly browned.
+                  </br> Remove the multi-grain dosa from the tava and serve hot.</p>
+
+              </div>
+            </diV>
+            <div class="recipe-btn">
+              <button onclick="window.location = 'https://hebbarskitchen.com/multigrain-dosa-recipe-mixed-dal-dosa/'"
+                class="go-to-recipe-btn">Read
+                full recipe</button>
+            </div>
+          </div>
+          
+        </div>
+        <div class="footer-class">
+          <div class="footer">
+            <div class="logo-contact-wraper">
+              <div class="footer-logo">
+                <img style="height: 7rem; width: 7rem;" src="./images/WebsiteLogo.jpeg" alt="logo" />
+              </div>
+              <div>
+                <a class="telephone" href="tel:+1234567890">+1 (857) 869-9680</a>
+                <a class="emailLink" href="mailto:shevalekar.d@northeastern.edu">E: shevalekar.d@northeastern.edu</a>
+                <form class="feddback-form" action="#" method="post">
+                  <input type="text" name="Name" placeholder="Name" required>
+                  <input type="password" name="Feedback" placeholder="Feedback" required>
+                  <input class="recipe-btn" type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+
+            <div class="popular-recipes">
+              <div class="popular-recipes-title">
+                <p>Popular Recipes</p>
+              </div>
+              <div class="popular-recipes-txt"><a href="">Raita</a>
+                <a href=""> Dabeli</a>
+                <a href=""> Pural Poli</a>
+                <a href=""> Paneer Recipes</a>
+                <a href=""> Green curries</a>
+              </div>
+            </div>
+              <div class="useful-links">
+                <div class="useful-links-title">
+                  <p>More Resources here</p>
+                </div>
+
+              <menu class="useful-links-txt" type="toolbar">
+                <a href="">Sign in</br></a>
+                <a href="">About Us</br></a>
+                <a href="recipes.html">Recipes</br></a>
+                <a href="">Menu</a>
+             </menu>
+            </div>
+
+          </div>
+          <div class="footer-copyright">
+            <p>© Copyright 2023 Foodie. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,62 @@
+#myTable input {
+	margin-left: 5px;
+}
+
+#myTable {
+	border:2px solid green;
+	border-collapse: collapse;
+	margin: 30px 30px 20px 40px;
+}
+#myTable td, th {
+	border:1px solid green;
+	padding: 5px;
+}
+#myTable th {
+	color: #fff;
+	background-color: #a7c942;
+}
+#button {
+	color:#fff;
+	background-color: orange;
+	border-radius: 3px;
+	border:2px solid orange;
+	margin-left: 180px;
+	background-color:grey ;
+	border:2px solid grey
+}
+#editCol
+{
+	display: none;
+}
+#delCol
+{
+	display: none;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  }
+  
+  .modal-content {
+	background-color: #fff;
+	margin: 20% auto;
+	padding: 20px;
+	width: 60%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .close {
+	float: right;
+	font-size: 24px;
+	font-weight: bold;
+	cursor: pointer;
+  }
+
+
+

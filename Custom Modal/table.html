@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<!-- Also read chapter 9 from slides - Regular Expressions -->
+
+<html>
+<head>
+	<h1 id="Myname"> Dipti Shevalekar - 002245703</h1>
+	<title>Table CheckList</title>
+	<link rel="stylesheet" type="text/css" href="table.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body onload="firstToLoad()">
+	<table id="myTable">
+		<tr id="headRow">
+			<th></th>
+			<th>STUDENT</th>
+			<th>ADVISOR</th>
+			<th>AWARD<br/>STATUS</th>
+			<th>SEMESTER</th>
+			<th>TYPE</th>
+			<th>BUDGET<br />#</th>
+			<th>PERCENTAGE</th>
+			<th id="delCol">DELETE</th> 
+			<th id="editCol">EDIT</th> 
+		</tr>
+		
+		<tr id="row01"><B</B>
+			<td><input type="checkbox" class="check" onclick="checkBoxFunction(this,'row01')"/><br /><br /><img src="down.png"  onclick="expandTheRow(0)" width="25px" /></td>
+			<td>Student 1</td>
+			<td>Teacher 1</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>12345</td>
+			<td>100%</td>
+			<td class="displaynone"><button id="delBtn" onclick="deleteStudentEntry()">Delete</button></td>
+			<td class="displaynone"><button id="editBtn" onclick="editStudentDetails()">Edit</button></td>
+		</tr>
+		<tr class="dropDownTextArea" ><td colspan="8" id="dropdown" >
+			Advisor:<br /><br />
+			Award Details<br />
+			Summer 1-2014(TA)<br />
+			Budget Number: <br />
+			Tuition Number: <br />
+			Comments:<br /><br /><br />
+			Award Status:<br /><br /><br />
+		</td></tr>
+		<tr id="row02">
+			<!-- <td><input type="checkbox" class="check" onclick="disHeader(this)" onchange="stickyheaddsadaer(this)"/><br /><br /><img src="down.png"  onclick="expandrow(1)" width="25px" /></td> -->
+			<td><input type="checkbox" class="check" onclick="checkBoxFunction(this,'row02')" /><br /><br /><img src="down.png"  onclick="expandTheRow(1)" width="25px" /></td>
+			<td>Student 2</td>
+			<td>Teacher 2</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>23456</td>
+			<td>100%</td>
+			<td class="displaynone"><button id="delBtn" onclick="deleteStudentEntry(this)">Delete</button></td>
+			<td class="displaynone"><button id="editBtn" onclick="editStudentDetails()">Edit</button></td>
+			
+		</tr>
+		<tr class="dropDownTextArea" ><td colspan="8" id="dropdown">
+			Advisor:<br /><br />
+			Award Details<br />
+			Summer 1-2014(TA)<br />
+			Budget Number: <br />
+			Tuition Number: <br />
+			Comments:<br /><br /><br />
+			Award Status:<br /><br /><br />
+		</td></tr>
+		<tr id="row3">
+			<td><input type="checkbox" class="check" onclick="checkBoxFunction(this,'row3')"/><br /><br /><img src="down.png"  onclick="expandTheRow(2)" width="25px" /></td>
+			<td>Student 3</td>
+			<td>Teacher 3</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>34567</td>
+			<td>100%</td>
+			<td class="displaynone"><button id="delBtn" onclick="deleteStudentEntry()">Delete</button></td>
+			<td class="displaynone"><button id="editBtn" onclick="editStudentDetails()">Edit</button></td>
+		</tr>
+		<tr class="dropDownTextArea"><td colspan="8" id="dropdown">
+			Advisor:<br /><br />
+			Award Details<br />
+			Summer 1-2014(TA)<br />
+			Budget Number: <br />
+			Tuition Number: <br />
+			Comments:<br /><br /><br />
+			Award Status:<br /><br /><br />
+		</td></tr>
+	</table>
+
+	<br /><br />
+	
+	<button id="button" disabled>SUBMIT SELECTED AWARDS</button>
+	<button type="button"  id="add"  onclick="addNewStudent()">Add New Student</button>
+
+	<nav class="socialmediaicons"></nav>
+	<script src="script.js"></script>
+	
+</body>
+</html>
